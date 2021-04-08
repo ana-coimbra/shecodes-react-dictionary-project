@@ -1,0 +1,22 @@
+.App {
+  color: #222831;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.App-footer {
+  font-family: "Nunito", sans-serif;
+  font-size: 11px;
+  padding: 0 0 2rem;
+  text-align: center;
+}
+
+.App-footer a {
+  color: #222831;
+  text-decoration: none;
+}
+
+.App-footer a:hover {
+  text-decoration: underline;
+}

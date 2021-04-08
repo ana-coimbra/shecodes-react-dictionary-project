@@ -1,0 +1,138 @@
+.Dictionary {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 1180px;
+}
+
+/* Header Section - Logo */
+.Dictionary .Header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  margin: 2rem 0 4rem;
+  text-align: left;
+}
+
+.Dictionary .Header .Logo {
+  color: #222831;
+  text-decoration: none;
+}
+
+.Dictionary .Header .Logo i {
+  animation: bob 2.5s infinite;
+  color: #fff;
+  background-color: #ffc93c;
+  border-radius: 50%;
+  font-size: 12px;
+  margin-right: 0.5rem;
+  padding: 8px;
+  width: 28px;
+  text-align: center;
+}
+
+/* Header Section - Search bar */
+.Dictionary .Header button {
+  color: #bebebe;
+  background: none;
+  border: none;
+  cursor: auto;
+  font-size: 12px;
+  transform: translateX(13rem);
+}
+
+.Dictionary .Header input {
+  border-radius: 2rem;
+  border: 1px solid #ddd;
+  color: #616161;
+  font-family: "Nunito", sans-serif;
+  padding: 4px;
+  text-indent: 1rem;
+  outline: none;
+  width: 14rem;
+}
+
+.Dictionary .Header input::placeholder {
+  color: #b1b1b1;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* Section General Styling */
+.Dictionary section {
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling h2 from Results.js */
+.Dictionary h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Animation Logo - Working for laptop and ipad pro screen sizes */
+@media only screen and (min-width: 1024px) {
+  @keyframes bob {
+    0% {
+      transform: translateY(0rem);
+    }
+    50% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+}
+
+/* General CSS - Width of the app for small laptops, tablet and mobile version */
+@media only screen and (max-width: 1400px) {
+  .Dictionary {
+    padding: 1rem 0;
+    width: 90%;
+  }
+}
+
+/* General CSS for mobile version */
+@media only screen and (max-width: 500px) {
+  .Dictionary .Header {
+    margin: 1rem 0 2rem;
+  }
+
+  .Dictionary .Header input {
+    width: 11rem;
+  }
+
+  .Dictionary .Header button {
+    transform: translateX(10rem);
+  }
+
+  .Dictionary h2 {
+    font-size: 32px;
+  }
+
+  .Dictionary section {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,37 @@
+.Phonetic {
+  margin-top: 1.5rem;
+}
+
+.Phonetic i {
+  color: #fff;
+  background-color: #ffc93c;
+  border-radius: 50%;
+  font-size: 16px;
+  padding: 8px;
+  width: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Phonetic i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.Phonetic .Text {
+  opacity: 0.8;
+  margin-left: 1rem;
+}
+
+/* Phonetic CSS for mobile version */
+@media only screen and (max-width: 500px) {
+  .Phonetic {
+    margin-top: 1rem;
+  }
+
+  .Phonetic i {
+    font-size: 14px;
+    padding: 8px;
+    width: 30px;
+  }
+}

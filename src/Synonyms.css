@@ -1,0 +1,22 @@
+.Synonyms {
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.Synonyms li {
+  border: 1px solid #ffc93c;
+  border-radius: 2rem;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 1rem 1rem 0;
+  padding: 5px 15px;
+}
+
+/* Synonyms CSS for mobile version */
+@media only screen and (max-width: 500px) {
+  .Synonyms {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,24 @@
+.Photos {
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.Photos .Hovereffect img {
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  transition: opacity 0.35s, transform 0.45s;
+}
+
+.Photos .Hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+/* Photos CSS for mobile version */
+@media only screen and (max-width: 500px) {
+  .Photos {
+    padding: 1rem 1.5rem;
+  }
+}
